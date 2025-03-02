@@ -23,7 +23,7 @@ addButtonListener('#submitName2', () => {
 addButtonListener('#startGame', () => {
     localStorage.setItem('player1', playerName1);
     localStorage.setItem('player2', playerName2);
-    window.location.href = "http://localhost:3000/gameon";
+    window.location.href = "/gameon";
 });
 
 

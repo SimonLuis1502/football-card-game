@@ -15,5 +15,5 @@ const getRandomInt = (min, max) => {
 export {addButtonListener, getRandomInt};
 
 addButtonListener("#home",()=>{
-    window.location.href = "http://localhost:3000";
+    window.location.href = "/start";
 });

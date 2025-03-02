@@ -4,9 +4,10 @@ import fs from "fs";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
-// `__dirname` manuell definieren für ES-Module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+
 
 const server = http.createServer((req, res) => {
 
@@ -15,7 +16,7 @@ const server = http.createServer((req, res) => {
     new URL(req.url, "http://localhost:3000")
 
     if (req.url === "/" && req.method === "GET") {
-        res.writeHead(301, { Location: "/start" });
+        res.writeHead(302, { Location: "/start" });
         res.end();
     }else if (req.url === "/common.js" && req.method === "GET") {
         res.writeHead(200, { "Content-Type": "application/javascript" });
@@ -45,10 +46,18 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { "Content-Type": "text/css" });
         fs.createReadStream("styles/index.css").pipe(res);
     }else if (req.url.startsWith("/images/") && req.method === "GET") {
-        const imagePath = req.url;
-        res.writeHead(200, { "Content-Type": "image/jpeg" });
-        fs.createReadStream(__dirname + imagePath).pipe(res);
-    }else {
+        const imagePath = __dirname + req.url;
+        fs.access(imagePath, fs.constants.F_OK, (err) => {
+            if (err) {
+                res.writeHead(404, { "Content-Type": "text/plain" });
+                res.end("❌ Bild nicht gefunden");
+            } else {
+                res.writeHead(200, { "Content-Type": "image/jpeg" });
+                fs.createReadStream(imagePath).pipe(res);
+            }
+        });
+    }
+    else {
         res.writeHead(404, { "Content-Type": "text/plain" });
         res.end("❌ 404 - Seite nicht gefunden");
     }
@@ -56,7 +65,7 @@ const server = http.createServer((req, res) => {
 
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`🚀 Server läuft auf http://localhost:${PORT}`);
 });
