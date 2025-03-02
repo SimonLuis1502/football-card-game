@@ -1,0 +1,323 @@
+.ask{
+    text-align: center;
+    font-size: 30px;
+    width: 350px;
+    position: absolute;
+    left: 265px;
+    top: 220px;
+    text-shadow:
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px  2px 0 white,
+            2px  2px 0 white;
+}
+
+.countButtons1{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.countButtons2{
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.countButtons{
+
+    position: absolute;
+    left: 700px;
+    top: 227px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: center;
+}
+.countButtons button{
+    cursor: pointer;
+}
+.countButtons button:hover{
+    transform: scale(1.1);
+}
+
+.cardCountButton{
+    border: solid black 3px;
+    font-weight: bold;
+font-size: 20px;
+    text-align: center;
+    background-color: #ae65a8;
+    height: 60px;
+    width: 100px;
+}
+
+.cardCountButton:hover{
+    background-color: #804a7b;
+}
+
+.cardCountButton:active{
+    background-color: #370734;
+}
+
+.shuffleText{
+    text-align: center;
+    font-size: 30px;
+    width: 450px;
+    position: absolute;
+    left: 225px;
+    top: 220px;
+    text-shadow:
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px  2px 0 white,
+            2px  2px 0 white;
+}
+
+#shuffleButton1{
+    cursor: pointer;
+    border: solid black 3px;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    background-color: #756009;
+    width: 200px;
+    height: 100px;
+    border-radius: 70%;
+    position: absolute;
+    left: 740px;
+    top: 315px;
+}
+
+#shuffleButton1:hover{
+    background-color: #604e09;
+    transform: scale(1.1);
+}
+
+#shuffleButton1:active{
+    background-color: #3a2f01;
+}
+
+#startingPlayer1{
+    font-size: 25px;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#startingPlayer2{
+    margin-top: -20px;
+    width: 370px;
+    position: absolute;
+    left:440px;
+    top: 0;
+    font-size: 25px;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#currentPlayer{
+    margin-top: -20px;
+    width: 370px;
+    position: absolute;
+    left:30px;
+    top: -120px;
+    font-size: 25px;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ #rollDice{
+     background: none;
+     border: none;
+     position: absolute;
+     top: 170px;
+     left: 555px;
+     width: 140px;
+     height: 140px;
+}
+
+
+
+#rollDice{
+    cursor: grab;
+    position: absolute;
+    top: 170px;
+    left: 555px;
+    width: 140px;
+    height: 140px;
+    border-radius: 70%;
+    background-image: url('/images/coin.png'); /* Ein Fußballmuster */
+    background-size: cover; /* Sorgt dafür, dass es sich perfekt anpasst */
+    background-position: center;
+    border: solid black 2px;
+}
+
+
+#rollDice:active{
+    cursor: grabbing;
+    width: 170px;
+    height: 32px;
+    left: 545px;
+    top: 195px;
+    background-image: url('/images/coin2.png'); /* Ein Fußballmuster */
+    background-size: cover; /* Sorgt dafür, dass es sich perfekt anpasst */
+    background-position: center;
+    z-index: 1;
+}
+
+#rollDice::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    bottom: -100px;
+    background: transparent;
+    z-index: -1;
+}
+
+.currentPlayer{
+    width: 450px;
+    left: 404px;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardDeck{
+    text-align: center;
+    background-color: #bdbdbd;
+    width: 250px;
+    height: 360px;
+    border-radius: 15px;
+    position: absolute;
+    top: 280px;
+    border: solid black 2px;
+}
+
+#player1Cards{
+    left: 243px;
+}
+
+#player2Cards{
+    right: 267px;
+}
+
+.selectButtons{
+    position: absolute;
+    left: 137px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectValue{
+    border: solid black 3px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+.selectValue:hover{
+    background-color: #959494;
+}
+
+.selectValue:active{
+    background-color: #424242;
+}
+
+.showFirstCard{
+    border: solid black 2px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+}
+
+.showFirstCard:hover{
+    background-color: #787777;
+}
+#showFirstCard1{
+    left: 50px;
+}
+
+#showFirstCard2{
+    right: 50px;
+}
+
+#compareCards{
+    height: 250px;
+    width: 450px;
+    left: 404px;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#continueGame{
+    background-color: #094875;
+    border: solid black 2px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 550px;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    cursor: pointer;
+}
+
+.gameOver{
+    text-align: center;
+    font-size: 30px;
+    width: 650px;
+    position: absolute;
+    left: 300px;
+    top: -30px;
+    text-shadow:
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px  2px 0 white,
+            2px  2px 0 white;
+}

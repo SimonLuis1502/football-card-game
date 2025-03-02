@@ -1,0 +1,186 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #4b982e;
+}
+#field{
+    z-index: -2;
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.fieldGrassLines{
+    background-color: #336c0d;
+    width: 135px;
+    height: 670px;
+}
+
+#fieldGrid{
+    z-index: -1;
+    background: none;
+    position: absolute;
+    height: 580px;
+    width: 1050px;
+    left: 100px;
+    right: 100px;
+    top: 80px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldLines{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+#line1{
+    position: absolute;
+    width: 1050px;
+    top: 100%;
+}
+
+#line2{
+    position: absolute;
+    width: 1050px;
+    top: 0;
+}
+
+#line3{
+    position: absolute;
+    height: 580px;
+    left: 0
+}
+
+#line4{
+    position: absolute;
+    height: 580px;
+    left: 100%
+}
+
+
+#line5{
+    position: absolute;
+    width: 165px;
+    left: 0;
+    top: 27%;
+}
+
+#line6{
+    position: absolute;
+    width: 165px;
+    left: 0;
+    bottom: 27%;
+}
+
+#line7{
+    position: absolute;
+    height: 267px;
+    left: 165px;
+}
+
+#line8{
+    position: absolute;
+    width: 165px;
+    right: 0;
+    top: 27%;
+}
+
+#line9{
+    position: absolute;
+    width: 165px;
+    right: 0;
+    bottom: 27%;
+}
+
+#line10{
+    position: absolute;
+    height: 267px;
+    right: 165px;
+}
+
+#line11{
+    height: 100px;
+    width: 100px;
+    background: none;
+    border: solid white 5px;
+    border-radius: 100%;
+}
+#line12{
+    height: 580px;
+}
+#line13{
+    position: absolute;
+    width: 60px;
+    left: 0;
+    top: 41%
+}
+#line14{
+    position: absolute;
+    width: 60px;
+    left: 0;
+    bottom: 41%
+}
+#line15{
+    position: absolute;
+    height: 104px;
+    left: 60px;
+}
+#line16{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: 40px;
+}
+#line17{
+    position: absolute;
+    width: 60px;
+    right: 0;
+    top: 41%
+}
+#line18{
+    position: absolute;
+    width: 60px;
+    right: 0;
+    bottom: 41%
+}
+#line19{
+    position: absolute;
+    height: 104px;
+    right: 60px;
+}
+#line20{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 40px;
+}
+
+#home{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    top: 30px;
+    color: white;
+    border: #430000 solid 3px;
+    background-color: #bf0000;
+    cursor: pointer;
+}
+
+#home:hover{
+    background-color: #a62e2e;
+}
+#home:active{
+    background-color: #4e2c2c;
+}
+
+button{
+    cursor: pointer;
+}

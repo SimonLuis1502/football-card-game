@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gameon</title>
+    <script src="common.js" type="module" defer></script>
+    <script src="gameOn.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles/gameOn.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+<div>
+
+    <div class = "gameSettings">
+        <h1>Game Settings</h1>
+        <div class = "cardCount">
+            <div class = "ask">
+            <h2>With how many cards do you wanna play?</h2>
+            </div>
+            <div class = "countButtons">
+                <div class = "countButtons1">
+            <button class = cardCountButton  id = "cardButton1">1 card</button>
+            <button class = cardCountButton id = "cardsButton3">3 cards</button>
+            <button class = cardCountButton id = "cardsButton5">5 cards</button>
+                </div>
+                    <div class = "countButtons2">
+            <button class = cardCountButton id = "cardsButton10">10 cards</button>
+            <button class = cardCountButton id = "cardsButton15">15 cards</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class = "cardShuffle" style = "display: none">
+            <div class = "shuffleButton" >
+                <div class = "shuffleText">
+                <h2 id ="shuffleText">Each player will receive the chosen count of random cards:</h2>
+                </div>
+                <button  id = "shuffleButton1">shuffle</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "gamePlay" style = "display: none">
+
+        <h1>Game Play</h1>
+
+        <div class = "startingPlayer">
+            <div id = "startingPlayer1">
+                <h2>Flip the coin to decide who starts the Game.</h2>
+                <div class = "rollDice">
+                <button  id = "rollDice"></button>
+                    <div id = "coin"></div>
+                </div>
+            </div>
+            <div id = "startingPlayer2">
+            </div>
+        </div>
+
+        <div class = "currentPlayer" style = "display: none">
+            <div id = "currentPlayer"></div>
+            <h3>It's your turn. Please select the value you want to pick.</h3>
+            <div class = "selectButtons">
+            <button  class = "selectValue" id = "pickTrophies">trophies</button>
+            <button  class = "selectValue" id = "pickGames">games</button>
+            <button  class = "selectValue" id = "pickGoals">goals</button>
+            </div>
+        </div>
+
+        <div class = "cardDeck" id = "player1Cards" >
+            <div class = "cardDeckSize" id = "cardDeckSize1">
+            </div>
+            <button class = "showFirstCard" id = "showFirstCard1">show first card</button>
+            <div class = "firstCard" id = "firstCard1" style="display: none">
+            </div>
+        </div>
+
+        <div class = "cardDeck" id = "player2Cards" >
+            <div class = "cardDeckSize" id = "cardDeckSize2">
+            </div>
+            <button class = "showFirstCard" id = "showFirstCard2">show first card</button>
+            <div class = "firstCard" id = "firstCard2" style="display: none">
+            </div>
+
+        </div>
+
+        <div id = "compareCards" style="display: none">
+
+        </div>
+        <button id = "continueGame" style="display: none">continue</button>
+
+    </div>
+
+    <div class = "gameOver" style = "display: none">
+        <h1>Game Over!</h1>
+    </div>
+</div>
+<button id = "home">home</button>
+<div id="field">
+    <div class="fieldGrassLines" id="firstGrassLine"></div>
+    <div class="fieldGrassLines" id="secondGrassLine"></div>
+    <div class="fieldGrassLines" id="thirdGrassLine"></div>
+    <div class="fieldGrassLines" id="fourthGrassLine"></div>
+    <div class="fieldGrassLines" id="fifthGrassLine"></div>
+</div>
+<div id="fieldGrid">
+    <div class="fieldLines" id="line1"></div>
+    <div class="fieldLines" id="line2"></div>
+    <div class="fieldLines" id="line3"></div>
+    <div class="fieldLines" id="line4"></div>
+    <div class="fieldLines" id="line5"></div>
+    <div class="fieldLines" id="line6"></div>
+    <div class="fieldLines" id="line7"></div>
+    <div class="fieldLines" id="line8"></div>
+    <div class="fieldLines" id="line9"></div>
+    <div class="fieldLines" id="line10"></div>
+    <div class="fieldLines" id="line11"></div>
+    <div class="fieldLines" id="line12"></div>
+    <div class="fieldLines" id="line13"></div>
+    <div class="fieldLines" id="line14"></div>
+    <div class="fieldLines" id="line15"></div>
+    <div class="fieldLines" id="line16"></div>
+    <div class="fieldLines" id="line17"></div>
+    <div class="fieldLines" id="line18"></div>
+    <div class="fieldLines" id="line19"></div>
+    <div class="fieldLines" id="line20"></div>
+</div>
+</body>
+</html>

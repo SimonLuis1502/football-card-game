@@ -1,0 +1,152 @@
+
+
+#welcome {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom: #005024 solid 2px;
+    background: none;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.greetStart {
+    height: 100px;
+    border: 3px solid #515151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+#UserName1 {
+    background: #a3a3a3;
+    cursor: text;
+}
+#UserName1:focus {
+    background: #094875;
+    outline: none;
+}
+#UserName2 {
+    background: #a3a3a3;
+    cursor: text;
+}
+#UserName2:focus {
+    background: #094875;
+    outline: none;
+}
+.messi {
+
+    width: 90px;
+    height: 90px;
+    display: flex;
+    background-image: url('/images/messi.jpg');
+    background-size: cover;         /* Bild skalieren, um Box zu füllen */
+    background-position: center;    /* Bild zentrieren */
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.ronaldo {
+
+    width: 90px;
+    height: 90px;
+    display: flex;
+    background-image: url('/images/ronaldo.jpg');
+    background-size: cover;         /* Bild skalieren, um Box zu füllen */
+    background-position: center;    /* Bild zentrieren */
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.player1Name{
+    display: flex;
+    flex-direction: column; /* Untereinander anordnen */
+    align-items: center; /* Zentriert ausrichten */
+    text-align: center;
+}
+
+.player2Name{
+    display: flex;
+    flex-direction: column; /* Untereinander anordnen */
+    align-items: center; /* Zentriert ausrichten */
+    text-align: center;
+}
+
+.inner {
+    align-items: center;
+    width: 1000px;
+}
+
+.outerbody{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.greetEnd1{
+    text-align: center;
+    font-size: 35px;
+    text-shadow:
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px  2px 0 white,
+            2px  2px 0 white;
+}
+
+.greetEnd2{
+    position : absolute;
+    top: 240px;
+    left: 310px;
+    text-align: center;
+    font-size: 20px;
+    width: 250px;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+}
+
+#startGame{
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: 430px;
+    align-self: center;
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    background-image: url('/images/ball.jpg'); /* Ein Fußballmuster */
+    background-size: cover; /* Sorgt dafür, dass es sich perfekt anpasst */
+    background-position: center;
+    border: solid black 2px;
+    text-shadow:
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px  2px 0 white,
+            2px  2px 0 white;
+    cursor: grab;
+}
+
+#startGame:hover{
+    background-image: url('/images/ball2.jpg');
+    transform: scale(1.1);
+}
+
+#startGame:active{
+    transform: scale(0.5);
+    background-image: url('/images/ball2.jpg');
+    cursor: grabbing;
+}
+
+#submitName1{
+    cursor: pointer;
+}
+#submitName2{
+    cursor: pointer;
+}
+
